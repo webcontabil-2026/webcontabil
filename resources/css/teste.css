@@ -1,0 +1,80 @@
+/* Reset básico para garantir que funcione em qualquer navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #e9f0f5; /* Cinza claro do fundo do seu print */
+}
+
+/* SIDEBAR AZUL ESCURO (Igual ao seu print 3) */
+.sidebar {
+    width: 280px;
+    background-color: #002d5b; /* Azul marinho */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    padding: 20px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar nav ul li:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* ÁREA DE CONTEÚDO (Onde ficam os cards e gráficos) */
+.main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 30px;
+}
+
+/* GRID DE ACESSO RÁPIDO */
+.grid-acesso {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card-botao {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-weight: 600;
+    color: #002d5b;
+}
+
+/* RESPONSIVIDADE (Para o celular) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
