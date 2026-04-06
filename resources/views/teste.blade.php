@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -75,3 +76,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
+=======
+<h1>TESTE PORRA</h1>
+>>>>>>> ae4396a27b1c7d4b3e05cd984365c72358307704
